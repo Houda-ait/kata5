@@ -1,4 +1,6 @@
-package es.ulpgc;
+package es.ulpgc.Control;
+
+import es.ulpgc.Model.User;
 
 import java.io.IOException;
 

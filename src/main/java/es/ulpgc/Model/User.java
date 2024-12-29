@@ -1,4 +1,4 @@
-package es.ulpgc;
+package es.ulpgc.Model;
 
 public class User {
     public enum Gender{Male, Female}

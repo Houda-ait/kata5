@@ -1,6 +1,8 @@
-package es.ulpgc;
+package es.ulpgc.Control;
 
 import com.google.gson.Gson;
+import es.ulpgc.Model.User;
+import es.ulpgc.RandomUserResponse;
 import org.jsoup.Jsoup;
 
 import java.io.IOException;

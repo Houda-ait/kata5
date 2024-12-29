@@ -1,5 +1,8 @@
 package es.ulpgc;
 
+import es.ulpgc.Control.LoadRandomUserCommand;
+import es.ulpgc.Model.User;
+
 public class Main {
     public static void main(String[] args) {
         LoadRandomUserCommand command = new LoadRandomUserCommand(10);

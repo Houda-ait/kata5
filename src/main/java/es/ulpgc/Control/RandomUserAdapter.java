@@ -1,4 +1,8 @@
-package es.ulpgc;
+package es.ulpgc.Control;
+
+import es.ulpgc.Model.User;
+import es.ulpgc.RandomUser;
+import es.ulpgc.RandomUserResponse;
 
 import java.io.IOException;
 import java.net.URI;
@@ -8,7 +12,7 @@ import java.net.URLConnection;
 public class RandomUserAdapter implements UserAdapter<RandomUserResponse>{
 
     @Override
-    public  User adapt(RandomUserResponse randomUserResponse) {
+    public User adapt(RandomUserResponse randomUserResponse) {
         RandomUser randomUser = randomUserResponse.getResults().getFirst();
         User user = adapt(randomUser);
         user.setPhoto(downloadPhoto(randomUser.getPicture().medium()));
